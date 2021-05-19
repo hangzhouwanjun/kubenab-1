@@ -9,7 +9,7 @@ RUN apk add --no-cache git
 
 # Download modules
 RUN ls -alh /root/app && cd /root/app && \
-    GO111MODULE=on GOPROXY=https://gocenter.io go mod download
+    GO111MODULE=on go mod download
 
 # Build microservices
 RUN cd /root/app && \
