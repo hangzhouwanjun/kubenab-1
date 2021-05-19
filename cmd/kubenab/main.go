@@ -45,6 +45,7 @@ func main() {
 		Addr: ":" + port,
 		TLSConfig: &tls.Config{
 			ClientAuth: tls.NoClientCert,
+			MinVersion: tls.VersionTLS12,
 		},
 	}
 
